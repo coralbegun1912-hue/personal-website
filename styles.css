@@ -47,6 +47,80 @@ nav a:hover {
     color: #B76E65;
 }
 
+/* תוכן האתר */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* רווח בין חלקי האתר */
+section {
+    margin-bottom: 70px;
+    padding: 30px;
+}
+
+/* כותרות */
+section h2 {
+    color: #B76E65;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* אזור ההיכרות */
+#about {
+    background-color: #F0DBDB;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* תמונה באזור ההיכרות */
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* אזור ההשכלה */
+#education {
+    text-align: center;
+}
+
+#education h3 {
+    color: #594A47;
+    font-size: 22px;
+}
+
+#education p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* רשימת הכישורים */
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+/* כל כישור */
+#skills li {
+    background-color: #F0DBDB;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 /* גלריית התחביבים */
 .hobbies-grid {
     display: grid;
@@ -74,13 +148,101 @@ nav a:hover {
 
 /* כותרות התחביבים */
 .hobby-card h3 {
-    color: #416b63;
+    color: #B76E65;
     font-size: 22px;
 }
 
-/* התאמה למסך טלפון */
+/* תיאור התחביבים */
+.hobby-card p {
+    line-height: 1.6;
+}
+
+/* אזור יצירת קשר */
+#contact {
+    background-color: #F0DBDB;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* קישור ליצירת קשר */
+#contact a {
+    display: inline-block;
+    background-color: #DBA39A;
+    color: #594A47;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* שינוי צבע במעבר עכבר */
+#contact a:hover {
+    background-color: #F5EBE0;
+}
+
+/* תחתית האתר */
+footer {
+    background-color: #DBA39A;
+    color: #594A47;
+    text-align: center;
+    padding: 20px;
+}
+
+/* התאמה לטלפון */
 @media (max-width: 600px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
     .hobbies-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hobby-card img {
+        height: 200px;
+    }
+
+    #skills ul {
+        gap: 10px;
+    }
+
+    #skills li {
+        padding: 10px 15px;
     }
 }
