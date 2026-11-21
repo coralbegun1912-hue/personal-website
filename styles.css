@@ -1,0 +1,86 @@
+
+/* עיצוב כללי של האתר */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FEFCF3;
+    color: #594A47;
+}
+
+/* כותרת עליונה */
+header {
+    background-color: #DBA39A;
+    color: #594A47;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* תפריט ניווט */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #F5EBE0;
+}
+
+nav a {
+    color: #594A47;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #B76E65;
+}
+
+/* גלריית התחביבים */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* כרטיסיות התחביבים */
+.hobby-card {
+    background-color: #F5EBE0;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* תמונות התחביבים */
+.hobby-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* כותרות התחביבים */
+.hobby-card h3 {
+    color: #416b63;
+    font-size: 22px;
+}
+
+/* התאמה למסך טלפון */
+@media (max-width: 600px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+}
